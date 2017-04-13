@@ -19,12 +19,12 @@ public class Robot {
     }
 
     @Autowired
-    public void setId(@Value("#{randomText.getText()?.length()}") int id) {
+    public void setId(@Value("#{randomText.getTexts()?.length()}") int id) {
         this.id = id;
     }
 
     @Autowired
-    public void setSpeech(@Value("#{randomText.getText()}") String speech) {
+    public void setSpeech(@Value("#{randomText.getTexts()}") String speech) {
         this.speech = speech;
     }
 }
